@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <h1 class="title">WHISKAS</h1>
+        <img src="{% static 'img/y1.png' %}" alt="cat_dog">
+        <h2>наш телефон<br>
+            {{ telephone }}</h2>
+        <h3>Здесь продаются животные</h3>
+    </div>
+</div>
+
+</body>
+</html>
