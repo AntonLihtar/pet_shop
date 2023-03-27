@@ -17,6 +17,7 @@
 .header {
     height: 290px;
     background-color: #8a2be2;
+    margin-bottom: 165px;
 }
 
 .title {
@@ -57,9 +58,6 @@ h3 {
     right: 20px;
 }
 
-.pets .container {
-    margin-top: 165px;
-}
 
 .pets .container .pets_block {
 
