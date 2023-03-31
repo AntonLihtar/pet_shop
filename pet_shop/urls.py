@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pet_sait.views import index, temp
+from pet_sait.views import index, temp, pets
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('temp', temp, name="temp"),
+    path('pets', pets, name="pets"),
 
 ]
