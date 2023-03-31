@@ -3,5 +3,15 @@
 {% load static %}
 
 {% block content %}
-
+    {% for dog in dogs %}
+        <ol>
+            <b>{{ dog.name }}</b>
+            <br>
+            <img src="{{ dog.img }}" alt="{{ dog.name }}">
+            <br>
+            <li>{{ dog.text }}</li>
+        <br>
+        <br>
+        </ol>
+    {% endfor %}
 {% endblock %}

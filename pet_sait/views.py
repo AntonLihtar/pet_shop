@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from read_dogs import DOGS
 
 
 def index(request):
@@ -8,4 +9,5 @@ def temp(request):
     return render(request, 'temp.html')
 
 def pets(request):
-    return render(request, 'pets.html')
+    context = DOGS
+    return render(request, 'pets.html', context)
