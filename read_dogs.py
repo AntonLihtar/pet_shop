@@ -17,7 +17,7 @@ for name_dir in os.listdir(path1):
         if name_file.split('.')[1] == 'jpg':
             dogs_img = f'{path1}/{name_dir}/{name_file}'
 
-    DOGS[name_dir] = [dogs_img, text_content]
+    DOGS[name_dir] = [name_dir ,dogs_img, text_content]
 
 
 pprint(DOGS)
