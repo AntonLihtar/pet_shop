@@ -3,15 +3,22 @@
 {% load static %}
 
 {% block content %}
-    {% for dog in dogs %}
-        <ol>
-            <b>{{ dog.name }}</b>
-            <br>
-            <img src="{{ dog.img }}" alt="{{ dog.name }}">
-            <br>
-            <li>{{ dog.text }}</li>
-        <br>
-        <br>
-        </ol>
-    {% endfor %}
+    <div class="pets_pets">
+
+        <div class="pet_title">{{ title }}</div>
+
+        <div class="finish_divider"></div>
+        <div class="container">
+            {% for pet in pets %}
+                <div class="pets_pets_block">
+                    <span class="name">{{ pet.name }}</span>
+                    <img src="{{ pet.img }}" alt="{{ pet.name }}">
+                    <br>
+                    <span class="text">{{ pet.text }}</span>
+                    <br>
+                    <br>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
