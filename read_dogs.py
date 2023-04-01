@@ -1,7 +1,4 @@
 import os
-from pprint import pprint
-
-path1 = 'static/content/dogs'
 
 
 def return_list(path: str) -> list:
@@ -25,7 +22,6 @@ def return_dict(path: str) -> dict:
     title_list = path.split('/')[-1]
     return {'title': title_list, 'pets': return_list(path)}
 
-if __name__ == '__main__':
-    pprint(return_dict(path1))
 
-
+DOGS = return_dict('static/content/dogs')
+print(DOGS)
