@@ -24,4 +24,7 @@ def return_dict(path: str) -> dict:
 
 
 DOGS = return_dict('static/content/dogs')
+CATS = return_dict('static/content/cats')
+FISH = return_dict('static/content/fish')
+
 print(DOGS)

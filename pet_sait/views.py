@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from read_dogs import DOGS
+from read_dogs import DOGS, CATS , FISH
 
 
 def index(request):
@@ -8,6 +8,11 @@ def index(request):
 def temp(request):
     return render(request, 'temp.html')
 
-def pets(request):
-    context = DOGS
-    return render(request, 'pets.html', context)
+def dogs(request):
+    return render(request, 'pets.html', DOGS)
+
+def cats(request):
+    return render(request, 'pets.html', CATS)
+
+def fish(request):
+    return render(request, 'pets.html', FISH)
