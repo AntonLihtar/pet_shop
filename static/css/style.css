@@ -25,6 +25,8 @@
 
 }
 
+
+
 h1 {
 
     font-style: italic;
@@ -67,6 +69,9 @@ h3 {
     min-height: 450px;
 }
 
+a.link {
+    text-decoration: none;
+}
 
 .pets_block .block {
     display: block;
