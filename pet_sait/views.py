@@ -16,3 +16,9 @@ def cats(request):
 
 def fish(request):
     return render(request, 'pets.html', FISH)
+
+def author(request):
+    return render(request, 'author.html')
+
+def reviews(request):
+    return render(request, 'reviews.html')

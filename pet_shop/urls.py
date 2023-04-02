@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pet_sait.views import index, temp, dogs, cats, fish
+from pet_sait.views import index, temp, dogs, cats, fish, author, reviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,7 @@ urlpatterns = [
     path('dogs', dogs, name="dogs"),
     path('cats', cats, name="cats"),
     path('fish', fish, name="fish"),
+    path('author', author, name="author"),
+    path('reviews', reviews, name="reviews"),
 
 ]

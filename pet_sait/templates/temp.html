@@ -21,35 +21,12 @@
 </div>
 
 {% block content %} {% endblock %}
-{#<div class="pets">#}
-{#    <div class="container">#}
-{##}
-{#        <h2> Наши питомцы</h2>#}
-{#        <div class="finish_divider"></div>#}
-{##}
-{#        <div class="pets_block">#}
-{#            <div class="block">#}
-{#                <div class="text">cat</div>#}
-{#                <img src="{% static 'img/index_animals/cat1.jpeg' %}" alt="cat">#}
-{#            </div>#}
-{##}
-{#            <div class="block">#}
-{#                <div class="text">fish</div>#}
-{#                <img src="{% static 'img/index_animals/fish1.jpg' %}" alt="fish">#}
-{#            </div>#}
-{##}
-{#            <div class="block">#}
-{#                <div class="text">dog</div>#}
-{#                <img src="{% static 'img/index_animals/dog1.jpg' %}" alt="dog">#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
 
 <div class="footer">
     <div class="container">
-        <a id="1" href="">Отзывы о нас</a>
-        <a href="">Автор сайта</a>
+        <a href="{% url 'index' %}">Главная</a>
+        <a id="1" href="{% url 'reviews' %}">Отзывы о нас</a>
+        <a href="{% url 'author' %}">Автор сайта</a>
     </div>
 </div>
 
